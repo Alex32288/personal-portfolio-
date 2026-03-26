@@ -1,6 +1,11 @@
 import { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import Navbar from "../components/Navbar";
+import todoListImg from "../assets/Todo list application.png";
+import weatherImg from "../assets/weather forecast app.png";
+import expenseImg from "../assets/expense tracker.png";
+import fileManagerImg from "../assets/file manger.png";
+import portfolioImg from "../assets/portfolio website.jpg";
 const PRIMARY = "#00b894";
 const SECONDARY = "#00d4ff";
 
@@ -12,19 +17,19 @@ const NAV_LINKS = [
 const PROJECTS = [
   { tags: ["Python", "Flask"], title: "TODO LIST APPLICATION", badge: "Complete",
     desc: "A simple yet powerful todo list application built with Python and Flask. Features include adding, editing, and deleting tasks with persistent storage using SQLite database.",
-    image: "" },
-  { tags: ["JavaScript", "React"], title: "WEATHER FORECAST APP", badge: "Live",
+    image: todoListImg },
+  { tags: ["JavaScript", "React"], title: "WEATHER FORECAST APP", badge: "Complete",
     desc: "Real-time weather application built with JavaScript and React. Displays current weather, 5-day forecast, and weather alerts using OpenWeather API.",
-    image: "" },
+    image: weatherImg },
   { tags: ["C#", ".NET"], title: "EXPENSE TRACKER", badge: "Complete",
     desc: "Desktop expense tracker application built with C# and .NET Framework. Track daily expenses, categorize spending, and generate financial reports with data visualization.",
-    image: "" },
+    image: expenseImg },
   { tags: ["C++", "Qt"], title: "FILE MANAGER", badge: "Complete",
     desc: "A lightweight file manager application built with C++ and Qt. Browse directories, manage files, search functionality, and basic file operations.",
-    image: "" },
-  { tags: ["JavaScript", "HTML/CSS"], title: "PORTFOLIO WEBSITE", badge: "Live",
+    image: fileManagerImg },
+  { tags: ["JavaScript", "HTML/CSS"], title: "PORTFOLIO WEBSITE", badge: "Complete",
     desc: "Responsive portfolio website built with vanilla JavaScript, HTML5, and CSS3. Showcase projects, skills, and contact information with smooth animations.",
-    image: "" },
+    image: portfolioImg },
 ];
 
 const FILTERS = ["All Projects", "Python", "JavaScript", "C#", "C++", "Flask", "React", ".NET", "Qt"];
